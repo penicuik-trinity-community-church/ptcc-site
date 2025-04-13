@@ -1,5 +1,13 @@
+
 export default function Home() {
   return (
-    <h1>Penicuik Trinity Community Church</h1>
+    <div>
+
+      <img
+        src="/church.webp"
+        alt="church"
+        className="w-full h-auto object-cover"
+      />
+    </div>
   );
 }

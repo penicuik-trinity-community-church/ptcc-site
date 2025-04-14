@@ -49,9 +49,9 @@ export default function Navbar() {
           {isOpen && (
             <motion.div
               key="mobile-menu"
-              initial={{ opacity: 0, scaleY: 0 }}
-              animate={{ opacity: 1, scaleY: 1 }}
-              exit={{ opacity: 0, scaleY: 0 }}
+              initial={{ opacity: 0, translateY: -20 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              exit={{ opacity: 0, translateY: -20 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
               className="md:hidden flex flex-col space-y-4 absolute top-full left-0 w-full bg-white px-4 py-6"
             >
@@ -64,6 +64,6 @@ export default function Navbar() {
           )}
         </AnimatePresence>
       </div>
-    </nav >
+    </nav>
   );
 }

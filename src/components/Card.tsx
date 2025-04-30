@@ -3,6 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Button from './Button';
+import Image from 'next/image';
 
 interface CardProps {
     title: string;
@@ -23,7 +24,7 @@ const Card: React.FC<CardProps> = ({ title, description, imagePath, nextRoute })
     return (
         <div className="bg-white shadow-2xl rounded-lg overflow-hidden flex flex-col text-center p-6 h-full">
             {imagePath && (
-                <img
+                <Image
                     src={imagePath}
                     alt={title}
                     className="w-full h-auto max-h-80 object-cover rounded-lg mb-4"

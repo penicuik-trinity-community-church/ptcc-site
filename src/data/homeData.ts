@@ -1,7 +1,7 @@
 export const homeData = [
     {
-        title: 'Watch Our Services',
-        description: 'Catch up on our latest worship services anytime, from anywhere.',
+        title: 'Join a Group',
+        description: 'Find community and grow in faith by joining one of our small groups — there’s a place for everyone.',
         imagePath: '/image1.jpg',
         nextRoute: 'services'
     },

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
 
         {/* logo */}
         <div className="flex items-center space-x-2" onClick={() => router.push('/')}>
-          <img src="/tcc-logo.png" alt="Logo" className="lg:h-22 md:h-15 sm:h-15 h-15 w-auto object-contain" />
+          <Image src="/tcc-logo.png" alt="Logo" className="lg:h-22 md:h-15 sm:h-15 h-15 w-auto object-contain" />
         </div>
 
         {/* burger icon (mobile) */}

@@ -1,12 +1,13 @@
 import Card from "../components/Card";
 import { homeData } from "@/data/homeData";
 import YouTubeEmbeded from "@/components/YouTubeEmbedded";
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <header className="w-full">
-        <img
+        <Image
           src="/church.jpg"
           alt="Church"
           className="w-full h-[60vh] lg:h-[50vh] object-cover object-[50%_90%]"

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface YouTubeEmbededProps {
     videoUrl: string;
@@ -9,22 +9,6 @@ interface YouTubeEmbededProps {
 
 const YouTubeEmbeded: React.FC<YouTubeEmbededProps> = ({ videoUrl, description }) => {
     const iframeRef = useRef<HTMLIFrameElement>(null);
-    const [videoHeight, setVideoHeight] = useState<number>(0);
-
-    useEffect(() => {
-        const updateVideoHeight = () => {
-            const width = iframeRef.current?.offsetWidth || 640;
-            const height = width * 0.5625; // 16:9 aspect ratio
-            setVideoHeight(height);
-        };
-
-        updateVideoHeight();
-        window.addEventListener('resize', updateVideoHeight);
-
-        return () => {
-            window.removeEventListener('resize', updateVideoHeight);
-        };
-    }, []);
 
     const videoId = new URLSearchParams(new URL(videoUrl).search).get('v');
     if (!videoId) {

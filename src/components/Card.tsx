@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import Button from '../Button/Button';
+import Button from './Button';
 
 interface CardProps {
     title: string;

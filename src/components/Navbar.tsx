@@ -20,7 +20,16 @@ export default function Navbar() {
 
         {/* logo */}
         <div className="flex items-center space-x-2" onClick={() => router.push('/')}>
-          <Image src="/tcc-logo.png" alt="Logo" className="lg:h-22 md:h-15 sm:h-15 h-15 w-auto object-contain" />
+          <div className="relative w-auto h-auto">
+            <Image
+              src="/tcc-logo.png"
+              alt="Logo"
+              className="object-contain lg:h-22 md:h-15 sm:h-15 h-15 w-auto"
+              width={100}
+              height={25}
+            />
+
+          </div>
         </div>
 
         {/* burger icon (mobile) */}

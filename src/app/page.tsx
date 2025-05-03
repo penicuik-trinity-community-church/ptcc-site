@@ -12,6 +12,8 @@ export default function Home() {
           alt="Church"
           className="w-full h-[60vh] lg:h-[50vh] object-cover object-[50%_90%]"
           loading="eager"
+          width={100}
+          height={25}
         />
       </header>
 
@@ -29,7 +31,7 @@ export default function Home() {
         </section>
 
         <section className="mt-15 text-center">
-          <h2 className="text-3xl font-semibold mb-4">Watch Our Latest Service</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-gray-800">Watch The Latest Service</h2>
           <div className="flex justify-center">
             <YouTubeEmbeded
               videoUrl="https://www.youtube.com/watch?v=MAdYYdK6zI4&t=248s"

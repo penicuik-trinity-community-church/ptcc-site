@@ -28,6 +28,8 @@ const Card: React.FC<CardProps> = ({ title, description, imagePath, nextRoute })
                     src={imagePath}
                     alt={title}
                     className="w-full h-auto max-h-80 object-cover rounded-lg mb-4"
+                    width={100}
+                    height={25}
                 />
             )}
             <div className="flex-1 flex flex-col">
